@@ -5,8 +5,10 @@
 <p class="date">
 	Submitted <%= time_ago_in_words(@post.created_at) %> Ago
 </p>
-<h3> testing some text here </h3>
+
 
 <p class="body">
 	<%= @post.body %>
 </p>
+
+<%= link_to "Edit", edit_post_path(@post) %>

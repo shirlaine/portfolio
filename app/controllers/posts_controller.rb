@@ -5,17 +5,22 @@ class PostsController < ApplicationController
 
 
 	def new 
+		@post = Post.new
 	end
 
 	def create
 		@post = Post.new(post_params)
-		@post.save
+		
+		if @post.save
 
-		redirect_to @post
+		redirect_to @post, notice: "Your new blog post has been miraculously saved!"
+		else
+			render 'new', notice: "Oh no, your post was NOT saved!"
+		end
 	end
 
 	def show 
-		@post = Post.find(params[:id])
+	 	@post = Post.find(params[:id])	
 	end
 
 	
@@ -24,4 +29,10 @@ class PostsController < ApplicationController
 		def post_params
 			params.require(:post).permit(:title, :body)
 		end
+
+		def find_post
+			@post = Post.find(params[:id])
+
+end
+
 end

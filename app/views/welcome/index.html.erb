@@ -1,0 +1,26 @@
+<h1>test</h1> 
+
+<header>
+
+</header>
+
+<body>
+
+  	<div id="sidebar">
+      <div id="logo">
+         <%=link_to root_path do %>
+          <%= image_tag "logo.svg" %>
+        <% end %>
+    
+
+     </div>
+      <ul>
+        <li class="category">About Me (static PAge) </li>
+       <li class="category">Contact Me (form) </li>
+        <li class="category">Video static + youtube</li>
+        <li><%= link_to "Blog", posts_path %> </li>
+        <li><a href="http://localhost:3000/posts">Blog</a></li>
+  
+    
+    </body>
+
