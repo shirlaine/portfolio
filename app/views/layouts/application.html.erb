@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<h1> TESTasdfasdf</h1>
+    
     <title>Blog</title>
     <%= csrf_meta_tags %>
 
@@ -9,8 +9,27 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
-  
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+
+      <%= link_to root_path %>
+ <a href="/" class="navbar-brand">Houndsmitten</a>
+      
+    </div>
+    <div class="nav navbar-nav">
+      <li><a href="#">About</a></li>
+      <li><a href="http://localhost:3000/welcome/video">Video</a></li>
+      <li><%= link_to "Blog", posts_path %></li>
+         
+
+         <li><a href="#" class="navbar-link">Contact</a></li>
+    </div>
+
+
+  </nav>
     <%= yield %>
   </body>
+
 </html>
