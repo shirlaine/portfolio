@@ -1,19 +1,55 @@
-<h1>test</h1> 
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> 
 <header>
+  <h1 class="header" >Homepage</h1>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
+<style>
+
+  h1{
+    color:blue !important;
+    font-family: Lobster;
+  }
+  .header{
+    color:red;
+  }
+
+  .category{
+    color:red;
+  }
+
+  .smaller-image{
+    width:150px;
+  }
+  .thick-border{
+    border-color: blue;
+    border-width:10px;
+    border-style: solid;
+    border-radius: 100px;
+  }
+  #container-id{
+    background-color: cyan;
+  }
+  .container {
+    background-color: pink;
+  }
+
+
+
+
+</style>
 </header>
 
-<body>
 
-  	<div id="sidebar">
+<body>
+  <div class="container">
+    <div id="container-id">
       <div id="logo">
          <%=link_to root_path do %>
           <%= image_tag "logo.svg" %>
         <% end %>
     
 
-     </div>
+      </div>
       <ul>
         <li class="category">About Me (static PAge) </li>
        <li class="category">Contact Me (form) </li>
@@ -21,6 +57,13 @@
         <li><%= link_to "Blog", posts_path %> </li>
         <li><a href="http://localhost:3000/posts">Blog</a></li>
   
-    
+<img class="smaller-image thick-border"src="https://bit.ly/fcc-relaxing-cat" alt="Author
+  standing on a beach with two thumbs up. "></img>
+
+    </div>
+  </div>
+
+  <h3 style="color:black" id="orange-text" class="pink-text blue-text">Hello World!</h3>
+
     </body>
 
