@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 	#root "posts#homepage"
 	#root "posts#index"
 	
-	get 'forms/index'
 
-	
+	get 'forms/new' => 'forms#new'
+	resources :forms
+
 end
