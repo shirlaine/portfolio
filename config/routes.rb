@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 	get 'welcome/video'
 	#root "posts#homepage"
 	#root "posts#index"
+	
+	get 'forms/index'
 
 	
 end
