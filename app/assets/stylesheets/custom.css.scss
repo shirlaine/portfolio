@@ -1,13 +1,36 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.container_carousel
-{
-	width:100%;
-	margin: 0px;
-	padding: 0px;
+html, body{
+	height: 100%;
 }
 
-#myCarousel{
-	margin-top:-20px;
+
+.carousell 
+.item
+.active
+{
+	height:auto;
 }
+
+.carousel-inner{
+	height: auto;
+	margin-top: -100px;
+
+}
+
+
+.fill {
+    width: 100%;
+    height: auto;
+    background-position: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+
