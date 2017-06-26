@@ -1,8 +1,13 @@
 # README
 
 
-Project Title
-One Paragraph of project description goes here
+Portfolio Project
+This is my first attempt at creating a portfolio page on ruby on rails.
+
+It consists of the following parts:
+- Homepage using html, css and bootstrap
+- Blog section with Authentication using 'devise' gem
+- Contact page using 'simple_form' gem
 
 Getting Started
 
