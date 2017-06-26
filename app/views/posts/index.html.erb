@@ -4,7 +4,10 @@
 <br>
 <br>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "New Post", new_post_path %>
+<br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+
 
 <% @posts.each do |post| %>
 
