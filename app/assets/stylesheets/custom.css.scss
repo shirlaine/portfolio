@@ -5,6 +5,17 @@ html, body{
 	height: 100%;
 }
 
+navbar navbar-default navbar-fixed-top {
+    
+    background-color: white;
+   background: white;
+   border-color: white;
+}
+
+.container{
+    width: 70%;
+    margin-top: 100px;
+}
 
 .carousell 
 .item
@@ -19,6 +30,11 @@ html, body{
 
 }
 
+.twitter{
+    width: 50%;
+    height: 50%;
+}
+
 
 .fill {
     width: 100%;
@@ -31,6 +47,10 @@ html, body{
     -o-background-size: cover;
 }
 
+.blog-title{
+    text-align: center;
+    margin: 20px;
+}
 
 
 

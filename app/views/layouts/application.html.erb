@@ -11,7 +11,7 @@
 
 
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: transparent; border-color: transparent">
     <div class="navbar-header">
 
 
@@ -21,7 +21,7 @@
       
     </div>
 
-    <div class="nav navbar-nav">
+    <div class="nav navbar-nav" style ="color: ">
       <li><a href="#">About</a></li>
       <li><%= link_to "Video", welcome_video_path %></li>
       <li><%= link_to "Blog", posts_path %></li>
@@ -31,11 +31,13 @@
 
 
   </nav>
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+  
+    <p class="notice"style= "padding: 0px><%= notice %></p>
+       <p class="alert" style= "padding: 0px"><%= alert %></p>
+
     <%= yield %>
 
-    
+   
   </body>
 
 </html>
