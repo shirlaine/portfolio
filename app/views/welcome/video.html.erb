@@ -1,16 +1,17 @@
 
-<head>
-<%= image_tag("dalmatians.jpg", class: "img-responsive",:style=>"width :100%, top : 0px;", :alt => "rss feed") %>
-</head>
 
 <body>
-<div class="container">
-<div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube"> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Dv4Yir17ooA" allowfullscreen=""></iframe> </div> </div>
-</div>
+	
+<%= image_tag("dalmatians.jpg", class: "img-responsive",:style=>"width :100%, top : 0px;", :alt => "rss feed") %>
+
+<div class="container-fluid">
+	<div class="col-md-6 video" data-example-id="responsive-embed-16by9-iframe-youtube"> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Dv4Yir17ooA" allowfullscreen=""></iframe> 
+	</div></div>
+
+	<div class="col-md-6 twitter">
+		<a class="twitter-timeline" href="https://twitter.com/houndsmitten">Tweets by Houndsmitten</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
 
 
-
-<div class="twitter">
-<a class="twitter-timeline" href="https://twitter.com/houndsmitten">Tweets by Houndsmitten</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </body>

@@ -7,31 +7,44 @@
 
 
 <!--title-->
-<h1 class="blog-title">Blog Posts</h1>
+
+<div class="container-fluid">
+	<h1 class="row blog-title">Blog Posts</h1>
 
 
-<div class="container">
-	<div>
-<div class="btn btn-default">
-<%= link_to "Sign in to Post", new_post_path, class: "btn" %>
-</div>
+<div class="col-md-4"></div>
+<div class="col-md-4">
 
-<button type="button" class="btn">
-<%= link_to "Logout", destroy_user_session_path, class: "post-links", method: :delete %>
-</div>
-</button>
-
- 
-<!--posts-->
-<% @posts.each do |post| %>
-
-	<div class="post_wrapper" style="margin-top: 50px; margin-left:220px">
+	
+			<% @posts.each do |post| %>
+	<div class="post_wrapper" style="margin-top: 50px;">
 			<h2 class="title"><%= link_to post.title, post %></h2>
 			<p class="date"><%=post.created_at.strftime("%B, %d, %Y") %></p>
 			<p class="body"><%= (post.body) %></p>
+			</div>
+			<% end %>
 
 	</div>
 
 
-	<% end %>
+<div class="col-md-4"> 
+	<div class="btn btn-default button">
+	<%= link_to "New Post", new_post_path, class: "btn" %>
+	</div>
+
+	<div class="btn btn-default button">
+	<%= link_to "Logout", destroy_user_session_path, class: "btn", method: :delete %>
+	</div>
+</div>
+
+
+
+
+ 
+<!--posts-->
+
+</div>
+
+
+	
 

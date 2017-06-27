@@ -19,13 +19,14 @@ navbar navbar-default navbar-fixed-top {
     margin-top: 30px;
 }
 
+.container-fluid{
+    padding : 0px;
+}
+
 .post-wrapper{
     margin-left: 100px;
 }
 
-.post-links{
-    
-}
 
 .carousell 
 .item
@@ -40,10 +41,25 @@ navbar navbar-default navbar-fixed-top {
 
 }
 
+.button{
+    float: right;
+
+}
+.contact{
+    margin-left: 50px;
+}
+
+.video{
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
 
 .twitter{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
+    margin-top: 20px;
+    margin-left: 120px;
 }
 
 
