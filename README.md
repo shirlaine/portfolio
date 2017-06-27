@@ -2,6 +2,7 @@
 
 
 Portfolio Project
+
 This is my first attempt at creating a portfolio page on ruby on rails.
 
 It consists of the following parts:

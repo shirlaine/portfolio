@@ -3,6 +3,8 @@
 
 html, body{
 	height: 100%;
+
+margin-top: 25px;
 }
 
 navbar navbar-default navbar-fixed-top {
@@ -14,7 +16,15 @@ navbar navbar-default navbar-fixed-top {
 
 .container{
     width: 70%;
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.post-wrapper{
+    margin-left: 100px;
+}
+
+.post-links{
+    
 }
 
 .carousell 
@@ -29,6 +39,7 @@ navbar navbar-default navbar-fixed-top {
 	margin-top: -50px;
 
 }
+
 
 .twitter{
     width: 50%;

@@ -2,27 +2,36 @@
 
 
 
-<head>
+<%= image_tag("inu.jpg",class: "img-responsive",:style=>"width :100%, margin-top :500px;") %>
+	
 
 
-<%= image_tag("inu.jpg",:style=>"width :100%, margin-top :500px;") %>
-
-</head>
-
+<!--title-->
 <h1 class="blog-title">Blog Posts</h1>
 
-<%= link_to "New Post", new_post_path %>
-<br>
-<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 
+<div class="container">
+	<div>
+<div class="btn btn-default">
+<%= link_to "Sign in to Post", new_post_path, class: "btn" %>
+</div>
 
+<button type="button" class="btn">
+<%= link_to "Logout", destroy_user_session_path, class: "post-links", method: :delete %>
+</div>
+</button>
+
+ 
+<!--posts-->
 <% @posts.each do |post| %>
 
-	<div class="post_wrapper">
+	<div class="post_wrapper" style="margin-top: 50px; margin-left:220px">
 			<h2 class="title"><%= link_to post.title, post %></h2>
 			<p class="date"><%=post.created_at.strftime("%B, %d, %Y") %></p>
 			<p class="body"><%= (post.body) %></p>
 
 	</div>
+
+
 	<% end %>
 

@@ -11,7 +11,7 @@
 
 
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: transparent; border-color: transparent">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
 
 
@@ -31,11 +31,16 @@
 
 
   </nav>
-  
-    <p class="notice"style= "padding: 0px><%= notice %></p>
-       <p class="alert" style= "padding: 0px"><%= alert %></p>
-
+    <% if notice %> 
+    <p class="notice" style="color:red"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+    <p class="alert" style="color:green"><%= alert %></p>
+    <% end %>
     <%= yield %>
+
+
+      
 
    
   </body>
