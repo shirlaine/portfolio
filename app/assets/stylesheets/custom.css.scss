@@ -41,6 +41,16 @@ navbar navbar-default navbar-fixed-top {
 
 }
 
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 .button{
    margin-left: 20px;
 
@@ -53,6 +63,16 @@ navbar navbar-default navbar-fixed-top {
     margin-top: 100px;
     margin-left: 50px;
 
+}
+
+.post {
+    margin-top: 0px;
+    
+}
+
+.button-index { 
+    float: left;
+    margin-top: -40px;
 }
 
 .twitter{
@@ -77,6 +97,7 @@ navbar navbar-default navbar-fixed-top {
 .blog-title{
     text-align: center;
     margin-top: 40px;
+    margin: 50px;
 }
 
 

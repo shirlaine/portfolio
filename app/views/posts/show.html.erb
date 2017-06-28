@@ -1,8 +1,7 @@
 <div class="container-fluid">
 
-<h1 class= "blog-title">
-	<%= @post.title %>
-</h1>
+<h1 class="row blog-title"><%= @post.title %></h1>
+	
 
 <div class="col-md-2"></div>
 <div class="col-md-8">
@@ -10,10 +9,6 @@
 		<%= @post.body %>
 	</p>
 
-
-
-
-	
 
 <div class="btn btn-default button">
 	<%= link_to "Edit", edit_post_path(@post), class: "btn" %>
