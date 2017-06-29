@@ -27,6 +27,11 @@ navbar navbar-default navbar-fixed-top {
     margin-left: 100px;
 }
 
+.button-new{
+    float: left;
+    margin-right: 5px;
+}
+
 
 .carousell 
 .item
@@ -49,6 +54,7 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+    
 }
 
 .button{
@@ -67,10 +73,24 @@ hr {
 
 .post {
     margin-top: 0px;
+    padding-bottom: 100px;
     
 }
 
+.new-post{
+    padding-bottom: 100px;
+}
+
+.new-form{
+    padding: 20px;
+}
+
 .button-index { 
+    float: left;
+    margin-top: -40px;
+}
+
+.button-new{
     float: left;
     margin-top: -40px;
 }
@@ -82,6 +102,12 @@ hr {
     margin-left: 120px;
 }
 
+
+.textbox{
+    width: 600px;
+    height: 50px;
+    padding: 50px;
+}
 
 .fill {
     width: 100%;
