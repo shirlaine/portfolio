@@ -12,7 +12,11 @@
 	</p>
 
 
-<div class="btn btn-default button">
+
+
+<div class="post-body">
+</div>
+	<div class="btn btn-default button">
 	<%= link_to "Edit", edit_post_path(@post), class: "btn" %>
 </div>
 
@@ -22,11 +26,15 @@
 
 
 <div class="btn btn-default button">
-<%= link_to "Return to index", posts_path, class: "btn" %>
+<%= link_to "Back to index", posts_path, class: "btn" %>
 </div>
 
 <div class="btn btn-default button">
 <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn" %>
+</div>
+
+
+<div class="post-body">
 </div>
 
 </div>
@@ -45,15 +53,3 @@
 
 
 
-
-<!--template-->
-
-
-
-
-
-	</div>
-
-
-
-</div>

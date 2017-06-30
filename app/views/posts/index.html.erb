@@ -9,18 +9,18 @@
 <!--title-->
 
 <div class="container-fluid">
+
 	<h1 class="row blog-title">Blog Posts</h1>
 
 
 <div class="col-md-3"></div>
 <div class="col-md-6 post">
-
 	<hr>
 			<% @posts.each do |post| %>
-	<div class="post_wrapper" style="margin-top: 50px;">
-			<h2 class="title"><%= link_to post.title, post %></h2>
-			<p class="date"><%=post.created_at.strftime("%B, %d, %Y") %></p>
-			<p class="body"><%= (post.body) %></p>
+	<div class="post_wrapper" style="margin-top: 40px;">
+			<h2 class="title index"><%= link_to post.title, post %></h2>
+			<p class="date index"><%=post.created_at.strftime("%B, %d, %Y") %></p>
+			<p class="body post-body"><%= (post.body) %></p>
 			</div>
 			<% end %>
 

@@ -57,6 +57,8 @@ hr {
     
 }
 
+
+
 .button{
    margin-left: 20px;
 
@@ -77,6 +79,10 @@ hr {
     
 }
 
+.post-body{
+    margin-top: 50px;
+}
+
 .new-post{
     padding-bottom: 100px;
 }
@@ -95,6 +101,8 @@ hr {
     margin-top: -40px;
 }
 
+
+
 .twitter{
     width: 30%;
     height: 30%;
@@ -102,11 +110,19 @@ hr {
     margin-left: 120px;
 }
 
+.index{
+    text-align: center;
+
+}
 
 .textbox{
     width: 600px;
     height: 50px;
     padding: 50px;
+}
+
+.text-label{
+    font-size: 20px;
 }
 
 .fill {
@@ -122,8 +138,8 @@ hr {
 
 .blog-title{
     text-align: center;
-    margin-top: 40px;
-    margin: 50px;
+    margin: 40px;
+    font-size: 45px;
 }
 
 
