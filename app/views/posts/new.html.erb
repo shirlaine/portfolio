@@ -2,27 +2,31 @@
 <%= image_tag("inu.jpg",class: "img-responsive",:style=>"width :100%, margin-top :500px;") %>
 
 <div class="container-fluid">
+
+	<!--New Blog Post-->
 	<h1 class="row blog-title">New Blog Post</h1>
 
 
-<div class="col-md-3"></div>
-<div class="col-md-6 new-post">
+	<div class="col-md-3"></div>
+	<div class="col-md-6 new-post">
 
-<hr>
-<div class="new-form"></div>
+	<hr>
+	<div class="new-form"></div>
 
-<%= render "form" %>
+	<%= render "form" %>
 
-
+	<!--end-->
 
 
 </div>
+	
+	<!--buttons-->
+	<div class="col-md-3"><div class="btn btn-default button-new">
+		<%= link_to "Back to Index", posts_path, class: "btn" %>
+	</div>
 
-<div class="col-md-3"><div class="btn btn-default button-new">
-<%= link_to "Back to Index", posts_path, class: "btn" %>
-</div>
+	<div class="btn btn-default button-new">
+		<%= link_to "Logout", destroy_user_session_path, class: "btn", method: :delete %> </div>
 
-<div class="btn btn-default button-new">
-	<%= link_to "Logout", destroy_user_session_path, class: "btn", method: :delete %> </div>
-
+	<!--end-->
 </div>

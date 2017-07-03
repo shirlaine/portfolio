@@ -11,15 +11,16 @@
 
 
   <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
 
+  <!--Navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+    
+      <div class="navbar-header">
 
-<%= link_to "Houndsmitten", root_path, class: "navbar-brand" %>
+      <%= link_to "Houndsmitten", root_path, class: "navbar-brand" %>
+    
       
-
-      
-    </div>
+      </div>
 
     <div class="nav navbar-nav" style ="color: ">
       <li><%= link_to "About", welcome_about_path %></li>
@@ -31,17 +32,20 @@
 
 
   </nav>
+
+  <!--End-->
+
+  <!--Devise notice-->
+
     <% if notice %> 
-    <p class="notice" style="color:green, float: center"><%= notice %></p>
+      <p class="notice" style="color:green, float: center"><%= notice %></p>
     <% end %>
     <% if alert %>
-    <p class="alert" style="color:green, float: center"><%= alert %></p>
+      <p class="alert" style="color:green, float: center"><%= alert %></p>
     <% end %>
     <%= yield %>
 
-
-      
-
+  <!--end-->
    
   </body>
 

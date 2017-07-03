@@ -3,10 +3,11 @@
 <%= image_tag("sleepy.jpg", class: "img-responsive",:style=>"width :100%, position :top center;", :alt => "sleepy") %>
 
 <div class="container-fluid">
+<!--Contact Form-->
 <div class="new-form"></div>
 	<div class="col-md-6 contact">
-	<h1> Say hello here! </h1>
-	<br>
+		<h1> Say hello here! </h1>
+		<br>
 		<%= simple_form_for @form do |f| %>
   		<%= f.input :name %>
   		<%= f.input :email %>
@@ -14,19 +15,23 @@
   		<%= f.button :submit, 'Submit' %>
 		<% end %>
 	</div> 
-
+<!--end-->
 
 	<div class="col-md-5 ">
 
-<div class="social-border">
+	<!--Social Media-->
 
-<%= link_to image_tag("github2.png", class: "img-responsive social", :alt => "github"), "http://www.github.com/shirlaine" %>
+		<div class="social-border">
 
-<%= link_to image_tag("facebook2.png", class: "img-responsive social2", :alt => "github"), "http://www.facebook.com/shirlaine.phang" %>
+		<%= link_to image_tag("github2.png", class: "img-responsive social", :alt => "github"), "http://www.github.com/shirlaine" %>
 
-</div>
+		<%= link_to image_tag("facebook2.png", class: "img-responsive social2", :alt => "github"), "http://www.facebook.com/shirlaine.phang" %>
 
-</div>
+		</div>
+		
+	<!--end-->
+
+	</div>
 
 
 </div>
