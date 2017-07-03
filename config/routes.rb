@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	get 'welcome/index'
 	root 'welcome#index'
 	get 'welcome/video' => 'welcome#video'
+	get 'welcome/about' => 'welcome#about'
 	#root "posts#homepage"
 	#root "posts#index"
 	
