@@ -1,5 +1,5 @@
 
-<%= simple_form_for @post do |f| %> 
+<%= simple_form_for @post do |f| %>
 	<% if @post.errors.any? %>
 		<div id= "errors">
 			<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from saving</h2>
@@ -13,18 +13,18 @@
 
 	<p>
 	<%= f.label :title, class: "text-label" %><br>
-	<%= f.text_field :title, class: "form-control" %> 
+	<%= f.text_field :title, class: "form-control" %>
 	</p>
 
 	<br>
 	<p>
 
-	<%=f.label :body, "Write something down here!" %> <br> 
+	<%=f.label :body, "Write something down here!" %> <br>
 	<%= f.text_area :body, class: "form-control textbox" %>
 	</p>
 	<br>
-	<p><%=f.submit %></p> 
+	<p><%=f.submit %></p>
 
-<% end %>  
+<% end %>
 
 
